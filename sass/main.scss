@@ -1,23 +1,18 @@
-@import './base/common';
-@import './base/resets';
+@use './base/common';
+@use './base/resets';
 
-@import './utils/variables';
-@import './utils/mixins';
-@import './utils/container';
-@import './utils/visually-hidden';
+@use './utils/variables';
+@use './utils/mixins';
+@use './utils/container';
+@use './utils/visually-hidden';
 
-@import './components/sections';
-@import './components/titles';
-@import './components/buttons';
+@use './components/sections';
+@use './components/titles';
 
-@import './layout/header';
-@import './layout/swipe-up';
-@import './layout/hero';
-@import './layout/about';
-@import './layout/project';
-@import './layout/advantages';
-@import './layout/products';
-@import './layout/gallery';
-@import './layout/order';
-@import './layout/footer';
-@import './layout/personaldata';
+@use './layout/hero';
+@use './layout/about';
+@use './layout/advantages';
+@use './layout/products';
+@use './layout/final';
+@use './layout/footer';
+
