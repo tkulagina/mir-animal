@@ -1,3 +1,5 @@
+@use '../utils/mixins' as *;
+
 .hero {
     background-image: url(../images/hero/underlay-desktop-2x.png);
     background-repeat: no-repeat;

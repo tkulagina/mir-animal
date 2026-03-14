@@ -1,16 +1,18 @@
-.container{    
-    width: 100%;
-    padding-top: 32px;
+@use './mixins' as *;
+
+.container {
+  width: 100%;
+  padding-top: 32px;
     padding-bottom: 32px;
     padding-left: 12px;
     padding-right: 12px;
-    margin: 0 auto;
+  margin: 0 auto;
 
-@include mobile {
+  @include mobile {
     width: 375px;
   }
 
-   @include desktop {
+  @include desktop {
     width: 1240px;
     padding-top: 120px;
     padding-bottom: 60px;
