@@ -1,1 +1,44 @@
 @use '../utils/mixins' as *;
+
+.final_wrap {
+    display: flex;
+}
+
+.final_wrap_text_main {
+    width: 165px;
+    padding: 5px;
+    background-color: var(--main-color);
+    border-radius: 5px;
+    color: var(--second-color);
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.final_wrap_text_conj {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    font-size: 16px;
+}
+
+.product_group_item_img {
+    width: 105px;
+}
+
+@include desktop {
+    .final_wrap_text_main {
+    width: 480px;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 40px;
+}
+
+.final_wrap_text_conj {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 40px;
+}
+
+.product_group_item_img {
+    width: 480px;
+}
+}
