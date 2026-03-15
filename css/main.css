@@ -607,6 +607,10 @@ h4 {
     width: 480px;
   }
 }
+.footer-adress {
+  margin-bottom: 24px;
+}
+
 .footer-adress_head {
   margin-bottom: 12px;
   font-size: 20px;
@@ -623,6 +627,14 @@ h4 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 12px;
+  margin-bottom: 12px;
 }
 
 .footer-logo-img {

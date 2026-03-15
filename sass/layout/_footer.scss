@@ -1,5 +1,9 @@
 @use '../utils/mixins' as *;
 
+.footer-adress {
+    margin-bottom: 24px;
+} 
+
 .footer-adress_head {
     margin-bottom: 12px;
     font-size: 20px;
@@ -14,6 +18,10 @@
 
 .footer-down {
     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 12px;
+    margin-bottom: 12px;
 }
 
 .footer-logo-img {
