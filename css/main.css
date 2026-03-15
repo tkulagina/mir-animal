@@ -296,6 +296,7 @@ h4 {
 }
 
 .about-list_icon {
+  fill: var(--main-color);
   margin-left: 144px;
   margin-bottom: 12px;
 }
@@ -312,9 +313,9 @@ h4 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
