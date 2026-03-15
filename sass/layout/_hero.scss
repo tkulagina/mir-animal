@@ -1,45 +1,82 @@
 @use '../utils/mixins' as *;
 
-
+.container-header,
 .container-hero {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .logo-img {
+    margin: 0 auto;
    width: 100px;
 }
 
+.header-name_wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .header-name {
+    margin: 0 auto;
     font-size: 36px;
     font-weight: 700;
     line-height: 1.4;
 }
 
-.hero_decription {
-    display: flex;
+.container-hero {
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+align-items: center;
+}
+
+.hero_decription {    
+    width: 140px;
 }
 
 .hero_text {
-    font-size: 12px;
+    
+    font-family: var(--work-font);
+    font-size: 20px;
     font-weight: 400;
     line-height: 1.4;
 }
 
 .hero-img {
-    margin: 0 auto;
-    margin-bottom: 40px;
     width: 130px;
+    border: 10px solid var(--second-color);
+    border-radius: 5px;
 }
 
 @include desktop {
-    
-    .container-hero {
+    .container-header,
+    .container-hero,
+    .header,
+    .header-name_wrap {
         display: flex;
-        justify-content: space-between;
+        flex-direction: row;
+        justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 0px;  
     }
+
+
+.container-header {
+    width: 366px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+
 .logo-img {
-        padding-left: 120px;
         width: 366px;
+        margin: 0;
+}
+
+.header-name_wrap {
+    width: 500px;
 }
 
 .header-name{
@@ -50,9 +87,11 @@
 
 .hero_decription {
     display: flex;
+    width: 400px;
 }
 
 .hero_text {
+    
     font-size: 32px;
     font-weight: 400;
     line-height: 1.4;
